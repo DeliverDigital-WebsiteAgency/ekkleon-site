@@ -4,14 +4,15 @@ export default function Nav({ siteName }) {
       position: 'fixed',
       top: 0, left: 0, right: 0,
       zIndex: 100,
-      background: 'rgba(11,31,58,0.96)',
+      background: 'rgba(255,255,255,0.97)',
       backdropFilter: 'blur(8px)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
       padding: '0 5%',
       height: '64px',
-      borderBottom: '1px solid rgba(255,255,255,0.08)',
+      borderBottom: '1px solid rgba(0,0,0,0.08)',
+      boxShadow: '0 1px 8px rgba(0,0,0,0.08)',
     }}>
       <a href="#" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
         <img
@@ -22,9 +23,9 @@ export default function Nav({ siteName }) {
       </a>
 
       <ul style={{ display: 'flex', gap: '2rem', listStyle: 'none' }}>
-        <li><a href="#" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '0.875rem', fontWeight: 500 }}>Home</a></li>
-        <li><a href="#about" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '0.875rem', fontWeight: 500 }}>About</a></li>
-        <li><a href="#services" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '0.875rem', fontWeight: 500 }}>Services</a></li>
+        <li><a href="#" style={{ color: 'rgba(11,31,58,0.8)', textDecoration: 'none', fontSize: '0.875rem', fontWeight: 500 }}>Home</a></li>
+        <li><a href="#about" style={{ color: 'rgba(11,31,58,0.8)', textDecoration: 'none', fontSize: '0.875rem', fontWeight: 500 }}>About</a></li>
+        <li><a href="#services" style={{ color: 'rgba(11,31,58,0.8)', textDecoration: 'none', fontSize: '0.875rem', fontWeight: 500 }}>Services</a></li>
         <li><a href="#contact" style={{
           background: 'var(--orange)',
           color: 'white',
