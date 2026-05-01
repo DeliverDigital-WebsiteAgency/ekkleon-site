@@ -13,7 +13,7 @@ export default function Contact() {
       }}>
         <div>
           <div style={{
-            fontSize: '0.68rem',
+            fontSize: '0.78rem',
             fontWeight: 600,
             letterSpacing: '0.2em',
             color: 'var(--orange)',

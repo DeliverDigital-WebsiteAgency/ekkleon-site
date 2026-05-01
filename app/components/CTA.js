@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section style={{
+    <section id="cta" style={{
       background: 'var(--navy-mid)',
       position: 'relative',
       overflow: 'hidden',
@@ -15,7 +15,7 @@ export default function CTA() {
       }} />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <div style={{
-          fontSize: '0.68rem',
+          fontSize: '0.78rem',
           fontWeight: 600,
           letterSpacing: '0.2em',
           color: 'var(--orange)',

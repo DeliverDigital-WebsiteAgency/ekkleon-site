@@ -1,6 +1,6 @@
 export default function Hero({ acf }) {
   return (
-    <section style={{
+    <section id="hero" style={{
       position: 'relative',
       minHeight: '100vh',
       display: 'flex',

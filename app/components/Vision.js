@@ -13,7 +13,7 @@ const pillars = [
 
 export default function Vision() {
   return (
-    <section style={{ background: 'var(--cream)', padding: '100px 5%' }}>
+    <section id="vision" style={{ background: 'var(--cream)', padding: '100px 5%' }}>
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
