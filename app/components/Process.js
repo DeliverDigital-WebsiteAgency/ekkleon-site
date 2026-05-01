@@ -15,7 +15,7 @@ export default function Process({ steps }) {
 
       <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', marginBottom: '4rem' }}>
         <div style={{
-          fontSize: '0.68rem',
+          fontSize: '0.78rem',
           fontWeight: 600,
           letterSpacing: '0.2em',
           color: 'var(--orange)',
@@ -31,10 +31,10 @@ export default function Process({ steps }) {
           marginBottom: '1rem',
         }}>A Clear Path Forward</h2>
         <p style={{
-          fontSize: '1.05rem',
-          color: 'rgba(255,255,255,0.6)',
+          fontSize: '1.15rem',
+          color: 'rgba(255,255,255,0.65)',
           maxWidth: '600px',
-          lineHeight: 1.75,
+          lineHeight: 1.8,
           margin: '0 auto',
         }}>We follow a proven four-step process that brings clarity before strategy, and strategy before action.</p>
       </div>
@@ -47,7 +47,7 @@ export default function Process({ steps }) {
       }}>
         {steps.map((step, i) => (
           <div key={i} style={{
-            padding: '2.5rem 2rem',
+            padding: '3rem 2.5rem',
             borderLeft: i === 0 ? 'none' : '1px solid rgba(255,255,255,0.1)',
           }}>
             <span style={{
@@ -60,7 +60,7 @@ export default function Process({ steps }) {
               display: 'block',
             }}>0{i + 1}</span>
             <span style={{
-              fontSize: '0.65rem',
+              fontSize: '0.75rem',
               fontWeight: 600,
               letterSpacing: '0.18em',
               color: 'var(--orange)',
@@ -70,13 +70,13 @@ export default function Process({ steps }) {
             }}>Step {i + 1}</span>
             <h3 style={{
               fontFamily: 'var(--font-playfair)',
-              fontSize: '1.2rem',
+              fontSize: '1.5rem',
               fontWeight: 700,
               color: 'white',
-              marginBottom: '0.75rem',
+              marginBottom: '1rem',
             }}>{step.title.rendered}</h3>
             <div
-              style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.7 }}
+              style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.8 }}
               dangerouslySetInnerHTML={{ __html: step.content.rendered }}
             />
           </div>

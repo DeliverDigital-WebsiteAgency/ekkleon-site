@@ -24,7 +24,7 @@ export default function Vision() {
       }}>
         <div>
           <div style={{
-            fontSize: '0.68rem',
+            fontSize: '0.78rem',
             fontWeight: 600,
             letterSpacing: '0.2em',
             color: 'var(--orange)',
@@ -42,7 +42,7 @@ export default function Vision() {
           }}>Why Does Your Church Need a Vision Plan?</h2>
 
           <p style={{
-            fontSize: '0.975rem',
+            fontSize: '1.05rem',
             color: 'var(--text-mid)',
             lineHeight: 1.8,
             marginBottom: '1.25rem',
@@ -52,15 +52,16 @@ export default function Vision() {
             {pillars.map((pillar, i) => (
               <div key={i} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                 <div style={{
-                  width: '36px',
-                  height: '36px',
-                  borderRadius: '2px',
-                  background: 'var(--navy)',
+                  width: '10px',
+                  height: '10px',
+                  borderRadius: '50%',
+                  background: 'var(--orange)',
                   flexShrink: 0,
+                  marginTop: '5px',
                 }} />
                 <div>
-                  <h4 style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--navy)', marginBottom: '0.2rem' }}>{pillar.title}</h4>
-                  <p style={{ fontSize: '0.825rem', color: 'var(--text-light)', lineHeight: 1.5 }}>{pillar.description}</p>
+                  <h4 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--navy)', marginBottom: '0.3rem' }}>{pillar.title}</h4>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: 1.6 }}>{pillar.description}</p>
                 </div>
               </div>
             ))}

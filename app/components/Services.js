@@ -6,7 +6,7 @@ export default function Services({ services }) {
     }}>
       <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
         <div style={{
-          fontSize: '0.68rem',
+          fontSize: '0.78rem',
           fontWeight: 600,
           letterSpacing: '0.2em',
           color: 'var(--orange)',
@@ -24,10 +24,10 @@ export default function Services({ services }) {
         }}>Ministry Solutions Built for Your Church</h2>
 
         <p style={{
-          fontSize: '1.05rem',
+          fontSize: '1.15rem',
           color: 'var(--text-mid)',
           maxWidth: '600px',
-          lineHeight: 1.75,
+          lineHeight: 1.8,
           margin: '0 auto',
         }}>Every congregation is unique. Ekkleon brings structured frameworks and Spirit-led discernment to help your church move from uncertainty to momentum.</p>
       </div>
@@ -47,14 +47,14 @@ export default function Services({ services }) {
           }}>
             <h3 style={{
               fontFamily: 'var(--font-playfair)',
-              fontSize: '1.15rem',
+              fontSize: '1.35rem',
               fontWeight: 700,
               color: 'var(--navy)',
-              marginBottom: '0.75rem',
+              marginBottom: '1rem',
             }}>{service.title.rendered}</h3>
 
             <div
-              style={{ fontSize: '0.9rem', color: 'var(--text-mid)', lineHeight: 1.7 }}
+              style={{ fontSize: '0.975rem', color: 'var(--text-mid)', lineHeight: 1.75 }}
               dangerouslySetInnerHTML={{ __html: service.content.rendered }}
             />
 
