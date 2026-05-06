@@ -4,18 +4,8 @@ export default function About({ acf }) {
     : []
 
   return (
-    <section id="about" style={{
-      background: 'white',
-      padding: '100px 5%',
-    }}>
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: '6rem',
-        alignItems: 'center',
-        maxWidth: '1100px',
-        margin: '0 auto',
-      }}>
+    <section id="about" className="section-pad" style={{ background: 'white' }}>
+      <div className="about-grid">
         <div>
           {acf.about_photo ? (
             <img

@@ -1,13 +1,8 @@
 export default function Footer() {
   return (
-    <footer style={{
+    <footer className="footer-inner" style={{
       background: '#070f1e',
       padding: '2rem 5%',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      flexWrap: 'wrap',
-      gap: '1rem',
       borderTop: '1px solid rgba(255,255,255,0.06)',
     }}>
       <a href="#hero" style={{ textDecoration: 'none' }}>

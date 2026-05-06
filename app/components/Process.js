@@ -1,8 +1,7 @@
 export default function Process({ steps }) {
   return (
-    <section id="process" style={{
+    <section id="process" className="section-pad" style={{
       background: 'var(--navy)',
-      padding: '100px 5%',
       position: 'relative',
       overflow: 'hidden',
     }}>
@@ -39,17 +38,9 @@ export default function Process({ steps }) {
         }}>We follow a proven four-step process that brings clarity before strategy, and strategy before action.</p>
       </div>
 
-      <div style={{
-        position: 'relative',
-        zIndex: 1,
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-      }}>
+      <div className="process-steps">
         {steps.map((step, i) => (
-          <div key={i} style={{
-            padding: '3rem 2.5rem',
-            borderLeft: i === 0 ? 'none' : '1px solid rgba(255,255,255,0.1)',
-          }}>
+          <div key={i} className="process-step">
             <span style={{
               fontFamily: 'var(--font-playfair)',
               fontSize: '3.5rem',

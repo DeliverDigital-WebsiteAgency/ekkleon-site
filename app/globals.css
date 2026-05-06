@@ -32,3 +32,107 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: var(--font-inter), 'Inter', sans-serif;
 }
+
+/* ─── Nav ─── */
+.nav-desktop-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* ─── Section padding ─── */
+.section-pad { padding: 100px 5%; }
+
+/* ─── Two-column grids ─── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* ─── Services grid ─── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  border: 2px solid #e8e4dc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* ─── Process steps ─── */
+.process-steps {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.process-step { padding: 3rem 2.5rem; }
+.process-step + .process-step { border-left: 1px solid rgba(255,255,255,0.1); }
+
+/* ─── Footer ─── */
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 768px) {
+  .nav-desktop-links { display: none; }
+  .nav-hamburger { display: flex; }
+
+  .section-pad { padding: 60px 5%; }
+
+  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .two-col-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .name-row { grid-template-columns: 1fr; }
+
+  .services-grid { grid-template-columns: 1fr; }
+
+  .process-steps { grid-template-columns: 1fr; }
+  .process-step + .process-step { border-left: none; border-top: 1px solid rgba(255,255,255,0.1); }
+
+  .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+}

@@ -1,9 +1,6 @@
 export default function Services({ services }) {
   return (
-    <section id="services" style={{
-      background: 'var(--cream)',
-      padding: '100px 5%',
-    }}>
+    <section id="services" className="section-pad" style={{ background: 'var(--cream)' }}>
       <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
         <div style={{
           fontSize: '0.78rem',
@@ -32,14 +29,7 @@ export default function Services({ services }) {
         }}>Every congregation is unique. Ekkleon brings structured frameworks and Spirit-led discernment to help your church move from uncertainty to momentum.</p>
       </div>
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-        gap: '2px',
-        border: '2px solid #e8e4dc',
-        borderRadius: '4px',
-        overflow: 'hidden',
-      }}>
+      <div className="services-grid">
         {services.map((service, i) => (
           <div key={i} style={{
             background: 'white',

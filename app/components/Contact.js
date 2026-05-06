@@ -57,14 +57,8 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" style={{ background: 'var(--navy)', padding: '100px 5%' }}>
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: '5rem',
-        maxWidth: '900px',
-        margin: '0 auto',
-      }}>
+    <section id="contact" className="section-pad" style={{ background: 'var(--navy)' }}>
+      <div className="contact-grid">
         <div>
           <div style={{
             fontSize: '0.78rem',
@@ -120,7 +114,7 @@ export default function Contact() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="name-row">
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                 <label style={labelStyle}>First Name</label>
                 <input name="firstName" type="text" placeholder="John" value={form.firstName} onChange={handleChange} required style={inputStyle} />
