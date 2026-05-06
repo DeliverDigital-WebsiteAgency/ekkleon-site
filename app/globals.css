@@ -33,6 +33,22 @@ p {
   font-family: var(--font-inter), 'Inter', sans-serif;
 }
 
+/* ─── Hero ─── */
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text { flex: 0 0 55%; }
+.hero-compass { flex: 1; display: flex; justify-content: center; align-items: center; }
+
 /* ─── Nav ─── */
 .nav-desktop-links {
   display: flex;
@@ -120,6 +136,10 @@ p {
 /* ─── Mobile ─── */
 @media (max-width: 768px) {
   #hero { min-height: 75vh !important; padding-top: 80px !important; padding-bottom: 60px !important; }
+  .hero-content { flex-direction: column; gap: 2.5rem; }
+  .hero-text { flex: none; width: 100%; }
+  .hero-compass { flex: none; width: 100%; max-width: 260px; margin: 0 auto; }
+  .hero-bracket { display: none; }
   .nav-desktop-links { display: none; }
   .nav-hamburger { display: flex; }
 
