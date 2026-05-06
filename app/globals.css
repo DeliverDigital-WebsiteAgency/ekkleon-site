@@ -119,6 +119,7 @@ p {
 
 /* ─── Mobile ─── */
 @media (max-width: 768px) {
+  #hero { min-height: 75vh !important; padding-top: 80px !important; padding-bottom: 60px !important; }
   .nav-desktop-links { display: none; }
   .nav-hamburger { display: flex; }
 

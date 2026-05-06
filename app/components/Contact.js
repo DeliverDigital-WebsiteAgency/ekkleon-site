@@ -18,7 +18,7 @@ const labelStyle = {
   fontWeight: 600,
   letterSpacing: '0.1em',
   textTransform: 'uppercase',
-  color: 'rgba(255,255,255,0.45)',
+  color: 'rgba(255,255,255,0.7)',
 }
 
 export default function Contact() {
@@ -77,7 +77,7 @@ export default function Contact() {
           }}>Let&apos;s Start a Conversation</h2>
           <p style={{
             fontSize: '0.975rem',
-            color: 'rgba(255,255,255,0.55)',
+            color: 'rgba(255,255,255,0.82)',
             lineHeight: 1.8,
             marginTop: '1rem',
           }}>Whether your church is thriving and seeking its next chapter, or navigating difficult seasons, Ekkleon is here to help. Reach out and we&apos;ll schedule a complimentary discovery call.</p>
@@ -102,7 +102,7 @@ export default function Contact() {
               fontSize: '1.25rem',
             }}>✓</div>
             <h3 style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.4rem', color: 'white', fontWeight: 700 }}>Message Sent</h3>
-            <p style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.7 }}>
+            <p style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.82)', lineHeight: 1.7 }}>
               Thank you for reaching out. We&apos;ll be in touch within 1–2 business days to schedule your discovery call.
             </p>
             <button

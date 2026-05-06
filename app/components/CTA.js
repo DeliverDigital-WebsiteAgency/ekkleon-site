@@ -31,7 +31,7 @@ export default function CTA() {
           marginBottom: '1.25rem',
         }}>Custom Ministry Solutions.</h2>
         <p style={{
-          color: 'rgba(255,255,255,0.6)',
+          color: 'rgba(255,255,255,0.85)',
           fontSize: '1rem',
           marginBottom: '2.5rem',
           maxWidth: '480px',

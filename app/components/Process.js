@@ -31,7 +31,7 @@ export default function Process({ steps }) {
         }}>A Clear Path Forward</h2>
         <p style={{
           fontSize: '1.15rem',
-          color: 'rgba(255,255,255,0.65)',
+          color: 'rgba(255,255,255,0.85)',
           maxWidth: '600px',
           lineHeight: 1.8,
           margin: '0 auto',
@@ -45,7 +45,7 @@ export default function Process({ steps }) {
               fontFamily: 'var(--font-playfair)',
               fontSize: '3.5rem',
               fontWeight: 700,
-              color: 'rgba(255,255,255,0.06)',
+              color: 'rgba(255,255,255,0.9)',
               lineHeight: 1,
               marginBottom: '0.5rem',
               display: 'block',
@@ -61,13 +61,13 @@ export default function Process({ steps }) {
             }}>Step {i + 1}</span>
             <h3 style={{
               fontFamily: 'var(--font-playfair)',
-              fontSize: '1.5rem',
+              fontSize: '1.65rem',
               fontWeight: 700,
               color: 'white',
               marginBottom: '1rem',
             }}>{step.title.rendered}</h3>
             <div
-              style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.8 }}
+              style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8 }}
               dangerouslySetInnerHTML={{ __html: step.content.rendered }}
             />
           </div>

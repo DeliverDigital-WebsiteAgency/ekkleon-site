@@ -45,7 +45,7 @@ export default function Hero({ acf }) {
 
         <p style={{
           fontSize: 'clamp(1rem, 2vw, 1.2rem)',
-          color: 'rgba(255,255,255,0.7)',
+          color: 'rgba(255,255,255,0.88)',
           fontWeight: 300,
           maxWidth: '560px',
           margin: '0 auto 2.5rem',

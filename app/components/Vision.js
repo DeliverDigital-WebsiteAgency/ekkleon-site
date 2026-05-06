@@ -106,13 +106,13 @@ export default function Vision() {
                     lineHeight: 1,
                     marginBottom: '0.35rem',
                   }}>{stat.num}</div>
-                  <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', letterSpacing: '0.05em' }}>{stat.label}</div>
+                  <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.75)', letterSpacing: '0.05em' }}>{stat.label}</div>
                 </div>
               ))}
             </div>
 
             <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-              <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.7, fontStyle: 'italic' }}>
+              <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, fontStyle: 'italic' }}>
                 &apos;A vision without a plan is just a dream. A plan without God is just a program. Ekkleon brings both together.&apos;
               </p>
               <p style={{ fontSize: '0.75rem', color: 'var(--orange-light)', marginTop: '0.75rem', fontWeight: 600 }}>— Pastor Craig Liscom</p>

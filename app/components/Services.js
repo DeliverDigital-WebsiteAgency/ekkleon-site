@@ -37,7 +37,7 @@ export default function Services({ services }) {
           }}>
             <h3 style={{
               fontFamily: 'var(--font-playfair)',
-              fontSize: '1.35rem',
+              fontSize: '1.5rem',
               fontWeight: 700,
               color: 'var(--navy)',
               marginBottom: '1rem',
@@ -48,16 +48,6 @@ export default function Services({ services }) {
               dangerouslySetInnerHTML={{ __html: service.content.rendered }}
             />
 
-            <a href="#contact" style={{
-              display: 'inline-block',
-              marginTop: '1.25rem',
-              fontSize: '0.8rem',
-              fontWeight: 600,
-              color: 'var(--orange)',
-              letterSpacing: '0.05em',
-              textDecoration: 'none',
-              textTransform: 'uppercase',
-            }}>Learn More →</a>
           </div>
         ))}
       </div>
