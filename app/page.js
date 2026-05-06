@@ -10,6 +10,7 @@ import CTA from './components/CTA'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+export const dynamic = 'force-dynamic'
 
 export default async function Home() {
   const siteInfo = await getSiteInfo()
