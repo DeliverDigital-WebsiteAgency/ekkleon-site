@@ -13,7 +13,9 @@ export default function Footer() {
           />
         </a>
 
-        <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.45)' }}>© 2026 Ekkleon. All rights reserved.</p>
+        <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.45)' }}>Copyright 2026 Ekkleon | Built by{' '}
+          <a href="https://deliverdigital.net" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Deliver Digital</a>
+        </p>
 
         <ul style={{ display: 'flex', gap: '1.5rem', listStyle: 'none' }}>
           {[
@@ -33,21 +35,6 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div style={{
-        borderTop: '1px solid rgba(255,255,255,0.04)',
-        padding: '0.9rem 5%',
-        textAlign: 'center',
-      }}>
-        <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.3)' }}>
-          Built by{' '}
-          <a
-            href="https://deliverdigital.net"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: 'rgba(255,255,255,0.45)', textDecoration: 'none' }}
-          >Deliver Digital</a>
-        </p>
-      </div>
     </footer>
   )
 }
