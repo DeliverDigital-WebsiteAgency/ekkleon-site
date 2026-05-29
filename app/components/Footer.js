@@ -8,7 +8,7 @@ export default function Footer() {
         <a href="#" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
           <img
             src="https://cms.ekkleon.com/wp-content/uploads/2025/09/Ekkleon-logo-white-back-e1758653758917.png"
-            alt="Ekkleon"
+            alt="Ekkleon - Church Consulting and Vision Planning"
             style={{ height: '32px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.8 }}
           />
         </a>
@@ -17,11 +17,12 @@ export default function Footer() {
           <a href="https://deliverdigital.net" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Deliver Digital</a>
         </p>
 
-        <ul style={{ display: 'flex', gap: '1.5rem', listStyle: 'none' }}>
+        <ul style={{ display: 'flex', gap: '1.5rem', listStyle: 'none', flexWrap: 'wrap' }}>
           {[
             { label: 'About', href: '#about' },
             { label: 'Services', href: '#services' },
             { label: 'Privacy Policy', href: '/privacy-policy' },
+            { label: 'AI Info', href: '/ai-info' },
             { label: 'Contact', href: '#contact' },
           ].map(({ label, href }) => (
             <li key={label}>

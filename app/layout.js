@@ -40,13 +40,26 @@ const jsonLd = {
   name: 'Ekkleon',
   description: 'Church consulting and ministry solutions specializing in vision planning, strategic leadership, and Spirit-led renewal.',
   url: 'https://ekkleon.com',
+  logo: 'https://cms.ekkleon.com/wp-content/uploads/2025/09/Ekkleon-logo-white-back-e1758653758917.png',
   founder: {
     '@type': 'Person',
-    name: 'Craig Liscom',
+    name: 'Dr. Craig Liscom',
     jobTitle: 'Founder & Church Consultant',
+    image: 'https://cms.ekkleon.com/wp-content/uploads/2025/09/craig-liscom.jpg',
+    educationalCredential: [
+      'Master of Divinity, Southwestern Baptist Theological Seminary',
+      'Doctorate of Ministry, Trinity Evangelical Divinity School'
+    ],
   },
-  serviceType: 'Church Consulting',
+  serviceType: [
+    'Church Consulting',
+    'Vision Planning',
+    'Pastoral Leadership Coaching',
+    'Church Health Assessment',
+    'Strategic Planning',
+  ],
   areaServed: 'United States',
+  image: 'https://cms.ekkleon.com/wp-content/uploads/2025/09/Ekkleon-logo-white-back-e1758653758917.png',
 }
 
 export default function RootLayout({ children }) {

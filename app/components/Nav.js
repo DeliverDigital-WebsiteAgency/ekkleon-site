@@ -29,7 +29,7 @@ export default function Nav() {
         <a href="#" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
           <img
             src="https://cms.ekkleon.com/wp-content/uploads/2025/09/Ekkleon-logo-white-back-e1758653758917.png"
-            alt="Ekkleon"
+            alt="Ekkleon - Church Consulting and Vision Planning"
             style={{ height: '36px', width: 'auto' }}
           />
         </a>

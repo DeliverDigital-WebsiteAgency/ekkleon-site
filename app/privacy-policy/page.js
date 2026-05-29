@@ -3,7 +3,9 @@ import Footer from '../components/Footer'
 
 export const metadata = {
   title: 'Privacy Policy | Ekkleon',
-  description: 'Privacy policy for Ekkleon church consulting services.',
+  description: 'Privacy policy for Ekkleon church consulting services. Learn how we collect, use, and protect your data when you contact us.',
+  robots: { index: true, follow: true },
+  alternates: { canonical: 'https://ekkleon.com/privacy-policy' },
 }
 
 export default function PrivacyPolicy() {
