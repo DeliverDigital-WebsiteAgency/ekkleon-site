@@ -2,15 +2,28 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Privacy Policy | Ekkleon',
+  title: 'Privacy Policy',
   description: 'Privacy policy for Ekkleon church consulting services. Learn how we collect, use, and protect your data when you contact us.',
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://ekkleon.com/privacy-policy' },
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ekkleon.com' },
+    { '@type': 'ListItem', position: 2, name: 'Privacy Policy', item: 'https://ekkleon.com/privacy-policy' },
+  ],
+}
+
 export default function PrivacyPolicy() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Nav />
       <main style={{ paddingTop: '64px', background: 'var(--cream)', minHeight: '100vh' }}>
         <div style={{ maxWidth: '760px', margin: '0 auto', padding: '80px 5%' }}>

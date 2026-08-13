@@ -10,8 +10,6 @@ import CTA from './components/CTA'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-export const dynamic = 'force-dynamic'
-
 export const metadata = {
   title: 'Ekkleon — Church Consulting & Ministry Solutions',
   description: 'Ekkleon helps churches move from uncertainty to momentum through Spirit-led vision planning, strategic consulting, and pastoral leadership development led by Dr. Craig Liscom.',

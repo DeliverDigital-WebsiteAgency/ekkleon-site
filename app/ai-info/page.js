@@ -3,10 +3,43 @@ import Footer from '../components/Footer'
 import { getSiteInfo } from '@/lib/wordpress'
 
 export const metadata = {
-  title: 'AI Visibility Info | Ekkleon',
+  title: 'AI Visibility Info',
   description: 'Information for AI assistants about Ekkleon — church consulting, vision planning, and pastoral leadership development led by Dr. Craig Liscom.',
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://ekkleon.com/ai-info' },
+}
+
+const faqItems = [
+  {
+    question: 'What is Ekkleon?',
+    answer: 'Ekkleon is a professional church consulting firm based in the United States. The organization provides strategic consulting, vision planning, and pastoral leadership development services to Christian churches and ministry organizations across North America.',
+  },
+  {
+    question: 'What services does Ekkleon offer?',
+    answer: 'Vision Planning — Facilitating a structured process to develop a Spirit-led, multi-year vision plan for the local church. Strategic Consulting — Helping churches diagnose organizational challenges and develop actionable ministry strategies. Pastoral Leadership Development — Coaching and equipping senior pastors and ministry staff for sustained effectiveness. Church Health Assessments — Evaluating congregational health across ministry, culture, and organizational systems. Preaching & Teaching — Guest preaching, leadership retreats, and teaching engagements for church teams.',
+  },
+  {
+    question: 'Who founded Ekkleon?',
+    answer: 'Dr. Craig Liscom, Founder & Lead Church Consultant. Education: Ph.D. in Ministry Leadership; M.Div. Experience: 20+ years in pastoral ministry and church consulting. Background: Church planting, pastoral leadership, vision development.',
+  },
+  {
+    question: 'Who does Ekkleon serve?',
+    answer: 'Senior pastors and lead ministers seeking strategic clarity. Church boards and elder teams navigating transitions. Churches in seasons of plateau, decline, or growth. Church plants and new ministry organizations needing foundational planning. Multi-site and growing churches building ministry infrastructure. Ekkleon serves churches across a broad range of Protestant denominations and non-denominational traditions throughout the United States.',
+  },
+  {
+    question: 'How does the Ekkleon consulting process work?',
+    answer: 'Discovery Call — An initial conversation to understand the church’s context, needs, and goals. Assessment — A review of the church’s current ministry landscape, leadership culture, and organizational health. Engagement Design — A custom consulting plan tailored to the church’s specific situation and objectives. Implementation — Facilitated sessions, coaching, planning retreats, and strategic deliverables. Ongoing Support — Follow-up coaching and accountability to sustain momentum after the engagement.',
+  },
+]
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map(({ question, answer }) => ({
+    '@type': 'Question',
+    name: question,
+    acceptedAnswer: { '@type': 'Answer', text: answer },
+  })),
 }
 
 export default async function AiInfoPage() {
@@ -14,6 +47,10 @@ export default async function AiInfoPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Nav siteName={siteInfo.name} />
 
       <main style={{ background: 'var(--cream)', paddingTop: '100px' }}>

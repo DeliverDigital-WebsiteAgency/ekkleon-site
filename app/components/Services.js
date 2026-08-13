@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Services({ services }) {
   return (
     <section id="services" className="section-pad" style={{ background: 'var(--cream)' }}>
@@ -47,6 +49,17 @@ export default function Services({ services }) {
               style={{ fontSize: '0.975rem', color: 'var(--text-mid)', lineHeight: 1.75 }}
               dangerouslySetInnerHTML={{ __html: service.content.rendered }}
             />
+
+            {service.slug && (
+              <Link href={`/services/${service.slug}`} style={{
+                display: 'inline-block',
+                marginTop: '1.25rem',
+                fontSize: '0.85rem',
+                fontWeight: 600,
+                color: 'var(--orange)',
+                textDecoration: 'none',
+              }}>Learn more →</Link>
+            )}
 
           </div>
         ))}

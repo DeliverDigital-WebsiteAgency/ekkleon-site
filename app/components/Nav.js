@@ -1,10 +1,12 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Our Path', href: '#process' },
-  { label: 'About', href: '#about' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Our Path', href: '/#process' },
+  { label: 'About', href: '/#about' },
 ]
 
 export default function Nav() {
@@ -26,24 +28,27 @@ export default function Nav() {
         borderBottom: '1px solid rgba(0,0,0,0.08)',
         boxShadow: '0 1px 8px rgba(0,0,0,0.08)',
       }}>
-        <a href="#" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-          <img
+        <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', position: 'relative', height: '36px', width: '160px' }}>
+          <Image
             src="https://cms.ekkleon.com/wp-content/uploads/2025/09/Ekkleon-logo-white-back-e1758653758917.png"
             alt="Ekkleon - Church Consulting and Vision Planning"
-            style={{ height: '36px', width: 'auto' }}
+            fill
+            sizes="160px"
+            style={{ objectFit: 'contain', objectPosition: 'left center' }}
+            priority
           />
-        </a>
+        </Link>
 
         <ul className="nav-desktop-links">
           {navLinks.map(({ label, href }) => (
             <li key={label}>
-              <a href={href} style={{ color: 'rgba(11,31,58,0.8)', textDecoration: 'none', fontSize: '0.875rem', fontWeight: 500 }}>
+              <Link href={href} style={{ color: 'rgba(11,31,58,0.8)', textDecoration: 'none', fontSize: '0.875rem', fontWeight: 500 }}>
                 {label}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
-            <a href="#contact" style={{
+            <Link href="/#contact" style={{
               background: 'var(--orange)',
               color: 'white',
               padding: '0.45rem 1.1rem',
@@ -51,7 +56,7 @@ export default function Nav() {
               fontWeight: 600,
               textDecoration: 'none',
               fontSize: '0.875rem',
-            }}>Schedule a Call</a>
+            }}>Schedule a Call</Link>
           </li>
         </ul>
 
@@ -94,7 +99,7 @@ export default function Nav() {
           <ul style={{ listStyle: 'none' }}>
             {navLinks.map(({ label, href }) => (
               <li key={label} style={{ borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
-                <a
+                <Link
                   href={href}
                   onClick={() => setOpen(false)}
                   style={{
@@ -105,12 +110,12 @@ export default function Nav() {
                     fontSize: '1rem',
                     fontWeight: 500,
                   }}
-                >{label}</a>
+                >{label}</Link>
               </li>
             ))}
             <li style={{ paddingTop: '1rem' }}>
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 style={{
                   display: 'block',
@@ -123,7 +128,7 @@ export default function Nav() {
                   fontWeight: 600,
                   textDecoration: 'none',
                 }}
-              >Schedule a Call</a>
+              >Schedule a Call</Link>
             </li>
           </ul>
         </div>

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function About({ acf }) {
   const credentials = acf.about_credentials
     ? acf.about_credentials.split('\n').filter(c => c.trim())
@@ -8,17 +10,15 @@ export default function About({ acf }) {
       <div className="about-grid">
         <div>
           {acf.about_photo ? (
-            <img
-              src={acf.about_photo}
-              alt={acf.about_name}
-              style={{
-                width: '100%',
-                aspectRatio: '4/5',
-                objectFit: 'cover',
-                borderRadius: '2px',
-                display: 'block',
-              }}
-            />
+            <div style={{ position: 'relative', width: '100%', aspectRatio: '4/5', borderRadius: '2px', overflow: 'hidden' }}>
+              <Image
+                src={acf.about_photo}
+                alt={`${acf.about_name || 'Pastor Craig Liscom'}, ${acf.about_role || 'Founder, Ekkleon'}`}
+                fill
+                sizes="(max-width: 768px) 100vw, 480px"
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
           ) : (
             <div style={{
               width: '100%',

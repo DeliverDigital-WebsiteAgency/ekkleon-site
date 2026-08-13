@@ -1,5 +1,8 @@
 import { Inter, Playfair_Display } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
+
+const LOGO_URL = 'https://cms.ekkleon.com/wp-content/uploads/2025/09/Ekkleon-logo-white-back-e1758653758917.png'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
@@ -40,7 +43,7 @@ const jsonLd = {
   name: 'Ekkleon',
   description: 'Church consulting and ministry solutions specializing in vision planning, strategic leadership, and Spirit-led renewal.',
   url: 'https://ekkleon.com',
-  logo: 'https://cms.ekkleon.com/wp-content/uploads/2025/09/Ekkleon-logo-white-back-e1758653758917.png',
+  logo: LOGO_URL,
   founder: {
     '@type': 'Person',
     name: 'Dr. Craig Liscom',
@@ -59,14 +62,16 @@ const jsonLd = {
     'Strategic Planning',
   ],
   areaServed: 'United States',
-  image: 'https://cms.ekkleon.com/wp-content/uploads/2025/09/Ekkleon-logo-white-back-e1758653758917.png',
+  image: LOGO_URL,
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <script
+      <body className={`${inter.variable} ${playfair.variable}`}>
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -75,8 +80,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-W49ZKSQX');`,
           }}
         />
-      </head>
-      <body className={`${inter.variable} ${playfair.variable}`}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-W49ZKSQX"

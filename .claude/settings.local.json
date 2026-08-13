@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:cms.ekkleon.com)"
+      "WebFetch(domain:cms.ekkleon.com)",
+      "WebSearch"
     ]
   }
 }

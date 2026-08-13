@@ -1,10 +1,28 @@
 export default function Process({ steps }) {
+  const howToJsonLd = steps.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How Ekkleon\'s Church Consulting Process Works',
+    description: 'We follow a proven four-step process that brings clarity before strategy, and strategy before action.',
+    step: steps.map((step) => ({
+      '@type': 'HowToStep',
+      name: step.title.rendered,
+      text: step.content.rendered.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(),
+    })),
+  } : null
+
   return (
     <section id="process" className="section-pad" style={{
       background: 'var(--navy)',
       position: 'relative',
       overflow: 'hidden',
     }}>
+      {howToJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+        />
+      )}
       <div style={{
         position: 'absolute',
         inset: 0,
