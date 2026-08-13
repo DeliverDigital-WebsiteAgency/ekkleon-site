@@ -80,7 +80,7 @@ export default function Contact() {
             color: 'rgba(255,255,255,0.82)',
             lineHeight: 1.8,
             marginTop: '1rem',
-          }}>Whether your church is thriving and seeking its next chapter, or navigating difficult seasons, Ekkleon is here to help. Reach out and we&apos;ll schedule a complimentary discovery call.</p>
+          }}>Whether your church is flourishing and ready for its next chapter or working through a difficult season, Ekkleon is here to walk alongside you. Reach out and we&apos;ll set up a complimentary discovery call to talk through where you are and where God is leading.</p>
         </div>
 
         {status === 'success' ? (
