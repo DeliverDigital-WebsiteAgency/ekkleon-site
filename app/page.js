@@ -12,7 +12,7 @@ import Footer from './components/Footer'
 
 export const metadata = {
   title: 'Ekkleon — Church Consulting & Ministry Solutions',
-  description: 'Ekkleon helps churches move from uncertainty to momentum through Spirit-led vision planning, strategic consulting, and pastoral leadership development led by Dr. Craig Liscom.',
+  description: 'Ekkleon guides churches from uncertainty to momentum with Spirit-led vision planning, church consulting, and pastoral leadership from Dr. Craig Liscom.',
   alternates: { canonical: 'https://ekkleon.com' },
 }
 
