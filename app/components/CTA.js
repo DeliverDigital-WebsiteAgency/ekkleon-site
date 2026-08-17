@@ -37,7 +37,7 @@ export default function CTA() {
           maxWidth: '480px',
           marginLeft: 'auto',
           marginRight: 'auto',
-        }}>Every church has a unique calling. Let&apos;s find yours together and build a clear path to get there.</p>
+        }}>Every church carries a unique calling. Together, let&apos;s discover yours and build a clear path to walk it out.</p>
         <a href="#contact" style={{
           display: 'inline-block',
           background: 'var(--orange)',
