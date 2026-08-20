@@ -39,7 +39,7 @@ export default function Vision() {
             color: 'var(--text-mid)',
             lineHeight: 1.8,
             marginBottom: '1.25rem',
-          }}>Without a clear, shared vision, even faithful churches drift. A vision plan is not a business strategy — it is a Spirit-led document that answers the question: <em>Where is God calling us, and how do we get there together?</em></p>
+          }}>Without a clear, shared vision, even faithful churches lose their way. A vision plan is not a business strategy. It is a Spirit-led document that answers one question: <em>Where is God calling us, and how do we get there together?</em></p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', margin: '1.5rem 0' }}>
             {pillars.map((pillar, i) => (
