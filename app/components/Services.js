@@ -28,7 +28,7 @@ export default function Services({ services }) {
           maxWidth: '600px',
           lineHeight: 1.8,
           margin: '0 auto',
-        }}>Every congregation is unique. Ekkleon brings structured frameworks and Spirit-led discernment to help your church move from uncertainty to momentum.</p>
+        }}>No two congregations are alike. Ekkleon pairs structured frameworks with Spirit-led discernment to guide your church from uncertainty to momentum.</p>
       </div>
 
       <div className="services-grid">
