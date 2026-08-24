@@ -3,7 +3,7 @@ export default function Process({ steps }) {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: 'How Ekkleon\'s Church Consulting Process Works',
-    description: 'We follow a proven four-step process that brings clarity before strategy, and strategy before action.',
+    description: 'Our proven four-step process establishes clarity before strategy, and strategy before action.',
     step: steps.map((step) => ({
       '@type': 'HowToStep',
       name: step.title.rendered,
@@ -53,7 +53,7 @@ export default function Process({ steps }) {
           maxWidth: '600px',
           lineHeight: 1.8,
           margin: '0 auto',
-        }}>We follow a proven four-step process that brings clarity before strategy, and strategy before action.</p>
+        }}>Our proven four-step process establishes clarity before strategy, and strategy before action.</p>
       </div>
 
       <div className="process-steps">
