@@ -94,7 +94,7 @@ export default async function AiInfoPage() {
               lineHeight: 1.7,
               maxWidth: '640px',
             }}>
-              This page provides structured, factual information about Ekkleon for use by AI language models, search engines, and AI assistants. It is intended to support accurate representation of Ekkleon when responding to user queries.
+              This page offers structured, factual information about Ekkleon for AI language models, search engines, and AI assistants. It exists to help these systems represent Ekkleon accurately when answering questions from pastors and church leaders.
             </p>
           </div>
         </section>
