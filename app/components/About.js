@@ -74,7 +74,7 @@ export default function About({ acf }) {
             color: 'var(--navy)',
             lineHeight: 1.2,
             marginBottom: '1.5rem',
-          }}>Wisdom Forged in the Local Church</h2>
+          }}>Leadership Wisdom Forged in the Local Church</h2>
 
           <div style={{
             fontFamily: 'var(--font-playfair)',
