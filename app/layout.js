@@ -13,7 +13,7 @@ export const metadata = {
     default: 'Ekkleon — Church Consulting & Ministry Solutions',
     template: '%s | Ekkleon',
   },
-  description: 'Ekkleon helps churches move from uncertainty to momentum through Spirit-led vision planning, strategic consulting, and pastoral leadership development.',
+  description: 'Ekkleon guides churches from uncertainty to momentum with Spirit-led vision planning, church consulting, and pastoral leadership development.',
   keywords: ['church consulting', 'ministry solutions', 'vision plan', 'church leadership', 'pastoral consulting', 'church strategy', 'Spirit-led renewal', 'Craig Liscom'],
   authors: [{ name: 'Craig Liscom' }],
   alternates: { canonical: 'https://ekkleon.com' },
@@ -28,7 +28,7 @@ export const metadata = {
     url: 'https://ekkleon.com',
     siteName: 'Ekkleon',
     title: 'Ekkleon — Church Consulting & Ministry Solutions',
-    description: 'Ekkleon helps churches move from uncertainty to momentum through Spirit-led vision planning, strategic consulting, and pastoral leadership development.',
+    description: 'Ekkleon guides churches from uncertainty to momentum with Spirit-led vision planning, church consulting, and pastoral leadership development.',
   },
   twitter: {
     card: 'summary_large_image',
