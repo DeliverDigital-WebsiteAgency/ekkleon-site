@@ -22,7 +22,7 @@ export default async function sitemap() {
     ...serviceEntries,
     {
       url: 'https://ekkleon.com/ai-info',
-      lastModified: new Date('2026-01-01'),
+      lastModified: new Date('2026-08-25'),
       changeFrequency: 'monthly',
       priority: 0.5,
     },
