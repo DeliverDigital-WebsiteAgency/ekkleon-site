@@ -6,7 +6,11 @@ import { getServices, getServiceBySlug } from '@/lib/wordpress'
 
 function plainText(html, length = 155) {
   if (!html) return ''
-  return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, length)
+  const text = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
+  if (text.length <= length) return text
+  const cut = text.slice(0, length)
+  const lastSpace = cut.lastIndexOf(' ')
+  return (lastSpace > 0 ? cut.slice(0, lastSpace) : cut).trim()
 }
 
 export async function generateStaticParams() {
