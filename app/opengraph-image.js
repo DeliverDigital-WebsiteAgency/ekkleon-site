@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 export const runtime = 'nodejs'
-export const alt = 'Ekkleon — Church Consulting & Ministry Solutions'
+export const alt = 'Ekkleon church consulting and ministry solutions, founded by Pastor Craig Liscom'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
