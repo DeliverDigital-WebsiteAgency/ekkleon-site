@@ -65,6 +65,7 @@ export default function Nav() {
           onClick={() => setOpen(o => !o)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
+          aria-controls="mobile-nav-menu"
         >
           <span style={{
             display: 'block', width: '22px', height: '2px', background: 'var(--navy)',
@@ -85,7 +86,7 @@ export default function Nav() {
       </nav>
 
       {open && (
-        <div style={{
+        <div id="mobile-nav-menu" style={{
           position: 'fixed',
           top: '64px',
           left: 0,
